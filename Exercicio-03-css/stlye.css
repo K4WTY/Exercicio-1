@@ -93,6 +93,7 @@ a {
 .primeira-button:hover {
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 
 .primeira-img {
@@ -151,6 +152,7 @@ a {
 .segunda-button:hover {
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 
 .segunda-caixas {
@@ -436,6 +438,7 @@ a {
     background-color: #000;
     border: none;
     color: #FFF;
+    cursor: pointer;
 }
 
 .sexta-baixo {
@@ -489,6 +492,7 @@ a {
     border: none;
     color: #FFF;
     border: 2px solid #00eeff;
+    cursor: pointer;
 }
 
 .baixo-p-100 {
