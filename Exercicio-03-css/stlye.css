@@ -484,6 +484,24 @@ a {
     color: #FFF;
 }
 
+.baixo-button:hover {
+    background-color: #000;
+    border: none;
+    color: #FFF;
+    border: 2px solid #00eeff;
+}
+
+.baixo-p-100 {
+    color: #444343;
+    padding-top: 10px;
+}
+
+.a-l {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
 footer {
     text-align: center;
     padding: 20px;
