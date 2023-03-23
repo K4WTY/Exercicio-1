@@ -182,6 +182,10 @@ a {
     padding-left: 160px;
 }
 
+.img-footer {
+    height: 18px;
+}
+
 .segunda-button-2 {
     background-color: #00eeff;
     border: none;
@@ -506,10 +510,14 @@ a {
     padding-top: 10px;
 }
 
-footer {
+.footer-div {
     text-align: center;
     padding: 20px;
     background-color: #000;
     color: white;
     border-top: 3px solid white;
+}
+
+footer {
+    background-color: black;
 }
