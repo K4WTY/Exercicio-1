@@ -8,6 +8,15 @@ a {
     text-decoration: none;
 }
 
+body {
+    background-color: #000;
+}
+
+.container-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .azul {
     color: #00eeff;
 }
@@ -226,7 +235,11 @@ a {
 
 .segunda-baixo {
     display: flex;
-    margin-left: 485px;
+    justify-content: center;
+}
+
+.espaço {
+    width: 137px;
 }
 
 #terceira-section {
