@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cima, .meio, .baixo {
+    display: flex;
+}
+
+.caixa-1, .caixa-2, .caixa-3, .caixa-4, .caixa-5, .caixa-6, .caixa-7, .caixa-8, .caixa-9 {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.caixa-1 {
+    display: flex;
+    justify-content: left;
+}
+
+.caixa-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-3 {
+    display: flex;
+    justify-content: right;
+}
+
+.caixa-4 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.caixa-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-6 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.caixa-7 {
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+
+.caixa-8 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.caixa-9 {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+}
+
+.caixa-dentro {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 30px;
+}
