@@ -14,11 +14,6 @@ main {
     margin-top: 80px;
 }
 
-h1 {
-    font-size: 40px;
-    color: white;
-}
-
 .container {
     display: flex;
     flex-direction: column;
