@@ -15,9 +15,14 @@ button:hover {
     cursor: pointer;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .container {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .top h1 {
