@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(61, 72, 100);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.main {
+    border: white solid 1px;
+    padding: 20px;
+}
+
+.top h1 {
+    color: white;
+}
+
+.top div {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-top: 20px;
+    width: 450px;
+    height: 100px;
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(30, 36, 53);
+}
+
+.center {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 1000px;
+    background-color: rgb(30, 36, 53);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.numeros-1 {
+    margin-top: 20px;
+}
+
+.button-numeros {
+    color: rgb(30, 36, 53);
+    width: 80px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: rgb(233, 226, 218);
+    border: none;
+}
+
+.button-azul {
+    color: rgb(30, 36, 53);
+    width: 80px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: rgb(233, 226, 218);
+    border: none;
+}
