@@ -11,8 +11,20 @@
     <div class="container">
         <div class="main">
             <div class="top">
-                <h1>calc</h1>
-                <div>
+                <div class="top-2">
+                    <h1>calc</h1>
+                    <div>
+                        <div class="numeros">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                        </div>
+                        <div class="fora" id="tema">
+                            <div class="dentro" onclick="mudarTema()"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa-valor">
                     <h2 class="valor">0</h2>
                 </div>
             </div>
@@ -48,5 +60,27 @@
             </div>
         </div>
     </div>
+    <script>
+
+        var justify = 'left'
+        const setTheme = theme => document.documentElement.className = theme;
+
+        function mudarTema() {
+            if (justify == 'left') {
+                document.getElementById("tema").style.justifyContent = "center";
+                justify = 'center'
+                setTheme('light')
+            } else if (justify == 'center') {
+                document.getElementById("tema").style.justifyContent = "right";
+                justify = 'right'
+                setTheme('dark')
+            } else if (justify == 'right') {
+                document.getElementById("tema").style.justifyContent = "left";
+                justify = 'left'
+                setTheme('padrao')
+            }
+        }
+
+    </script>
 </body>
 </html>

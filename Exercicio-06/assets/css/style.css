@@ -1,3 +1,52 @@
+:root,
+    :root.padrao {
+        --cor-texto: white;
+        --cor-texto-2: rgb(30, 36, 53);
+        --cor-texto-3: white;
+        --cor-fundo-2: rgb(30, 36, 53);
+        --cor-bolinha: orange;
+        --cor-fundo: rgb(61, 72, 100);
+        --cor-butao-azul: rgb(162, 179, 225);
+        --cor-borda-azul: rgb(65, 78, 113);
+        --cor-butao-igual: rgb(249, 108, 91);
+        --cor-borda-igual: rgb(143, 35, 22);
+        --cor-butao-n: rgb(233, 226, 218);
+        --cor-borda-n: rgb(178, 161, 151);
+        --cor-hover: white;
+    }
+    :root.light {
+        --cor-texto-3: white;
+        --cor-texto: black;
+        --cor-texto-2: rgb(30, 36, 53);
+        --cor-fundo-2: rgb(211, 205, 205);
+        --cor-bolinha: orange;
+        --cor-fundo: rgb(230, 230, 230);
+        --cor-butao-azul: rgb(98, 181, 189);
+        --cor-borda-azul: rgb(31, 94, 101);
+        --cor-butao-igual: rgb(255, 139, 56);
+        --cor-borda-igual: rgb(168, 123, 92);
+        --cor-butao-n: rgb(233, 226, 218);
+        --cor-borda-n: rgb(178, 161, 151);
+        --cor-hover: white;
+    }
+
+    :root.dark {
+        --cor-texto-3: white;
+        --cor-texto: rgb(254, 228, 82);
+        --cor-texto-2: rgb(254, 228, 82);
+        --cor-fundo-2: rgb(30, 8, 54);
+        --cor-bolinha: rgb(150, 253, 248);
+        --cor-fundo: rgb(23, 6, 42);
+        --cor-butao-azul: rgb(134, 49, 176);
+        --cor-borda-azul: rgb(126, 34, 149);
+        --cor-butao-igual: rgb(148, 255, 249);
+        --cor-borda-igual: rgb(61, 163, 158);
+        --cor-butao-n: rgb(51, 27, 77);
+        --cor-borda-n: rgb(126, 34, 149);
+        --cor-hover: rgb(107, 52, 172);
+    
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +54,12 @@
 }
 
 body {
-    background-color: rgb(61, 72, 100);
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 button:hover {
@@ -19,10 +73,22 @@ button:hover {
 }
 
 .top h1 {
-    color: white;
+    color: var(--cor-texto);
 }
 
-.top div {
+.top-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numeros {
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: space-around;
+}
+
+.caixa-valor {
     display: flex;
     justify-content: flex-end;
     padding-right: 20px;
@@ -31,16 +97,34 @@ button:hover {
     height: 100px;
     border-radius: 10px;
     align-items: center;
-    color: white;
+    color: var(--cor-texto);
     font-size: 25px;
-    background-color: rgb(30, 36, 53);
+    background-color: var(--cor-fundo-2);
+}
+
+.fora {
+    width: 80px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: var(--cor-fundo-2);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.dentro {
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: var(--cor-bolinha);
+    cursor: pointer;
 }
 
 .center {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(30, 36, 53);
+    background-color: var(--cor-fundo-2);
     border-radius: 10px;
     align-items: center;
     padding: 20px;
@@ -56,29 +140,29 @@ button:hover {
 }
 
 .button-numeros {
-    color: rgb(30, 36, 53);
+    color: var(--cor-texto-2);;
     width: 80px;
     height: 50px;
     border-radius: 10px;
     font-size: 20px;
-    background-color: rgb(233, 226, 218);
+    background-color: var(--cor-butao-n);
     border: none;
-    border-bottom: 4px solid rgb(178, 161, 151);
+    border-bottom: 4px solid var(--cor-borda-n);
 }
 
 .button-numeros:hover {
-    background-color: white;
+    background-color: var(--cor-hover);
 }
 
 .button-azul {
-    color: white;
+    color: var(--cor-texto-3);
     width: 80px;
     height: 50px;
     border-radius: 10px;
     font-size: 15px;
-    background-color: rgb(162, 179, 225);
+    background-color: var(--cor-butao-azul);
     border: none;
-    border-bottom: 4px solid rgb(65, 78, 113);
+    border-bottom: 4px solid var(--cor-borda-azul);
 }
 
 .final {
@@ -91,23 +175,23 @@ button:hover {
 }
 
 .reset {
-    color: white;
+    color: var(--cor-texto-3);
     width: 180px;
     height: 50px;
     border-radius: 10px;
     font-size: 15px;
-    background-color: rgb(162, 179, 225);
+    background-color: var(--cor-butao-azul);
     border: none;
-    border-bottom: 4px solid rgb(65, 78, 113);
+    border-bottom: 4px solid var(--cor-borda-azul);
 }
 
 .resultado{ 
-    color: white;
+    color: var(--cor-texto-3);
     width: 180px;
     height: 50px;
     border-radius: 10px;
     font-size: 15px;
-    background-color: rgb(249, 108, 91);
+    background-color: var(--cor-butao-igual);
     border: none;
-    border-bottom: 4px solid rgb(143, 35, 22);
+    border-bottom: 4px solid var(--cor-borda-igual);
 }
