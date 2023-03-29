@@ -68,14 +68,17 @@
         function mudarTema() {
             if (justify == 'left') {
                 document.getElementById("tema").style.justifyContent = "center";
+                document.getElementById("tema").style.backgroundColor = 'rgb(211, 205, 205)';
                 justify = 'center'
                 setTheme('light')
             } else if (justify == 'center') {
                 document.getElementById("tema").style.justifyContent = "right";
+                document.getElementById("tema").style.backgroundColor = 'rgb(30, 8, 54)';
                 justify = 'right'
                 setTheme('dark')
             } else if (justify == 'right') {
                 document.getElementById("tema").style.justifyContent = "left";
+                document.getElementById("tema").style.backgroundColor = 'rgb(30, 36, 53)';
                 justify = 'left'
                 setTheme('padrao')
             }
