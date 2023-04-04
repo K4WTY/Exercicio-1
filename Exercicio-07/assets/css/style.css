@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+}
+
+.elementos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.elemento {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-left: 0.625rem;
+    margin-top: 0.625rem;
+}
+
+.esquerda, .direita {
+    display: flex;
+}
+
+.cor {
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+    border-radius: 0.625rem;
+}
+
+.p-branco {
+    font-size: 0.800rem;
+}
+
+.left {
+    margin-top: 0.313rem;
+}
+
+.center {
+    margin-top: 1.875rem;
+}
+
+.right {
+    margin-top: 0.125rem;
+}
