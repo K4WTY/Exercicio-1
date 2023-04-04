@@ -6,12 +6,16 @@
 
 body {
     width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 10px;
+}
+
+.container {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
 }
 
 .tabela {
@@ -85,6 +89,10 @@ body {
     background-color: #79456C;
 }
 
+.p-e {
+    font-size: 10px;
+}
+
 .p-branco {
     font-size: 0.500rem;
 }
@@ -101,7 +109,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70px;
+    height: 80px;
 }
 
 .right {
@@ -126,6 +134,17 @@ body {
 
     .p-branco {
         font-size: 0.600rem;
+    }
+
+    .container {
+        margin-top: 0px;
+        flex-direction: row;
+    }
+
+    .legenda {
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     body {
