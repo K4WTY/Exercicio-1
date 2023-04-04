@@ -8,6 +8,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
     color: white;
@@ -16,6 +17,11 @@ body {
 
 .container {
     max-width: 1300px;
+=======
+    justify-content: center;
+    align-items: center;
+    color: white;
+>>>>>>> 7107225d6c4ec74b43be624a53f9d0c1f87edda1
 }
 
 .tabela {
@@ -26,18 +32,29 @@ body {
 .elementos {
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     padding: 5px;
 }
 
 .elemento {
     width: 60px;
     margin-left: 5px;
+=======
+}
+
+.elemento {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-left: 0.625rem;
+    margin-top: 0.625rem;
+>>>>>>> 7107225d6c4ec74b43be624a53f9d0c1f87edda1
 }
 
 .esquerda, .direita {
     display: flex;
 }
 
+<<<<<<< HEAD
 .cor-roxa, .cor-vermelha, .cor-vermelho-claro, .cor-azul, .cor-verde-claro, .cor-verde-escuro, .cor-verde-escuro-2, .cor-verde-claro-2, .cor-laranja {
     display: flex;
     justify-content: space-around;
@@ -82,6 +99,17 @@ body {
 
 .p-branco {
     font-size: 0.300rem;
+=======
+.cor {
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+    border-radius: 0.625rem;
+}
+
+.p-branco {
+    font-size: 0.800rem;
+>>>>>>> 7107225d6c4ec74b43be624a53f9d0c1f87edda1
 }
 
 .left {
@@ -94,6 +122,7 @@ body {
 
 .right {
     margin-top: 0.125rem;
+<<<<<<< HEAD
 }
 
 @media (max-width: 1200px) {
@@ -120,4 +149,6 @@ body {
         font-size: 15px;
     }
 
+=======
+>>>>>>> 7107225d6c4ec74b43be624a53f9d0c1f87edda1
 }
