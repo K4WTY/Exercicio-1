@@ -14,10 +14,6 @@ body {
     font-size: 10px;
 }
 
-.container {
-    max-width: 1300px;
-}
-
 .tabela {
     display: flex;
     flex-direction: column;
@@ -26,11 +22,11 @@ body {
 .elementos {
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding: 2px;
 }
 
 .elemento {
-    width: 60px;
+    width: 85px;
     margin-left: 5px;
 }
 
@@ -38,10 +34,11 @@ body {
     display: flex;
 }
 
-.cor-roxa, .cor-vermelha, .cor-vermelho-claro, .cor-azul, .cor-verde-claro, .cor-verde-escuro, .cor-verde-escuro-2, .cor-verde-claro-2, .cor-laranja {
+.cor-roxa, .cor-vermelha, .cor-vermelho-claro, .cor-azul, .cor-verde-claro, .cor-verde-escuro, .cor-verde-escuro-2, .cor-verde-claro-2, .cor-laranja, .cor-lilas, .cor-lilas-2 {
     display: flex;
     justify-content: space-around;
     border-radius: 0.625rem;
+    padding: 10px;
 }
 
 .cor-roxa {
@@ -80,6 +77,14 @@ body {
     background-color: #277DA1;
 }
 
+.cor-lilas {
+    background-color: #A770B8;
+}
+
+.cor-lilas-2 {
+    background-color: #79456C;
+}
+
 .p-branco {
     font-size: 0.500rem;
 }
@@ -90,6 +95,13 @@ body {
 
 .center {
     margin-top: 1.875rem;
+}
+
+.center-e {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70px;
 }
 
 .right {
@@ -103,10 +115,11 @@ body {
     
     .elementos {
         flex-direction: column;
+        padding: 0px;
     }
 
     .elemento {
-        margin-top: 0.625rem;
+        margin-top: 1rem;
         width: 6.25rem;
         height: 6.25rem;
     }
