@@ -38,6 +38,15 @@ h3 {
     margin-left: 5px;
 }
 
+.elemento:hover{
+    transition:.2s;
+    transform:scale(1.5);
+    cursor:pointer;
+    z-index:2;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
 .esquerda, .direita {
     display: flex;
 }
