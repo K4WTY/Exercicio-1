@@ -30,7 +30,7 @@ body {
 }
 
 .elemento {
-    width: 85px;
+    width: 60px;
     margin-left: 5px;
 }
 
@@ -93,23 +93,27 @@ body {
     font-size: 10px;
 }
 
+.h2-d, .h2-e {
+    font-size: 20px;
+}
+
+.numeros {
+    font-size: 12px;
+}
+
 .p-branco {
     font-size: 0.500rem;
 }
 
-.left {
-    margin-top: 0.313rem;
-}
-
 .center {
-    margin-top: 1.875rem;
+    margin-top: 0.500rem;
 }
 
 .center-e {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 80px;
+    height: 53px;
 }
 
 .right {
@@ -145,6 +149,14 @@ body {
         position: fixed;
         top: 0;
         left: 0;
+    }
+
+    .h2-d, .h2-e {
+        font-size: 20px;
+    }
+
+    .numeros {
+        font-size: 20px;
     }
 
     body {
