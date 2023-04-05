@@ -142,8 +142,8 @@ h3 {
 
     .elemento {
         margin-top: 1rem;
-        width: 6.25rem;
-        height: 6.25rem;
+        width: 100px;
+        height: 100px;
     }
 
     .p-branco {
@@ -153,7 +153,6 @@ h3 {
     .container {
         margin-top: 0px;
         flex-direction: column;
-        
     }
 
     .legenda {
