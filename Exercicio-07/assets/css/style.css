@@ -171,6 +171,11 @@ h3 {
         flex-direction: column;
     }
 
+    .elemento:hover{
+        border: none;
+        border-radius: 0;
+    }
+    
     body {
         align-items: unset;
         font-size: 15px;
