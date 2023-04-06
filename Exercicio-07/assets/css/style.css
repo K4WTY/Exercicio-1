@@ -30,12 +30,11 @@ h3 {
 .elementos {
     display: flex;
     justify-content: space-between;
-    padding: 2px;
 }
 
 .elemento {
     width: 75px;
-    margin-left: 5px;
+    margin: 2px;
 }
 
 .elemento:hover{
