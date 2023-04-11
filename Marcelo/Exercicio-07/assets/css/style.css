@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+}
+
+.elementos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.elemento {
+    width: 75px;
+    margin: 2px;
+}
+
+.elemento:hover{
+    transition:.2s;
+    transform:scale(1.5);
+    cursor:pointer;
+    z-index:2;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.esquerda, .direita {
+    display: flex;
+}
+
+.legenda-tabela {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cor-roxa, .cor-vermelha, .cor-vermelho-claro, .cor-azul, .cor-verde-claro, .cor-verde-escuro, .cor-verde-escuro-2, .cor-verde-claro-2, .cor-laranja, .cor-lilas, .cor-lilas-2 {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0.625rem;
+    padding: 10px;
+}
+
+.cor-roxa {
+    background-color: #4603B1;
+}
+
+.cor-vermelha {
+    background-color: #E20808;
+}
+
+.cor-vermelho-claro {
+    background-color: #F94141;
+}
+
+.cor-laranja {
+    background-color: #F8961E;
+}
+
+.cor-verde-claro {
+    background-color: #43AA8B;
+}
+
+.cor-verde-claro-2 {
+    background-color: #87B465;
+}
+
+.cor-verde-escuro {
+    background-color: #4D908E;
+}
+
+.cor-verde-escuro-2 {
+    background-color: #2A796C;
+}
+
+.cor-azul {
+    background-color: #277DA1;
+}
+
+.cor-lilas {
+    background-color: #A770B8;
+}
+
+.cor-lilas-2 {
+    background-color: #79456C;
+}
+
+.p-e {
+    font-size: 10px;
+}
+
+.p-branco {
+    font-size: 0.500rem;
+}
+
+.center {
+    margin-top: 1.875rem;
+}
+
+.center-e {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80px;
+}
+
+.right {
+    margin-top: 0.125rem;
+}
+
+@media (max-width: 1200px) {
+    .esquerda, .direita {
+        display: block;
+    }
+    
+    .elementos {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .elemento {
+        margin-top: 1rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    .p-branco {
+        font-size: 0.600rem;
+    }
+
+    .container {
+        margin-top: 0px;
+        flex-direction: column;
+    }
+
+    .legenda {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .h3-m {
+        font-size: 10px;
+    }
+
+    .legenda-tabela {
+        justify-content: end;
+        flex-direction: column;
+    }
+
+    .elemento:hover{
+        border: none;
+        border-radius: 0;
+    }
+    
+    body {
+        align-items: unset;
+        font-size: 15px;
+    }
+
+}
