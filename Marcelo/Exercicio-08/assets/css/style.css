@@ -155,7 +155,7 @@ a {
     .container-grid {
         display: grid;
         grid-gap: 0.3rem;
-        grid-template-columns: 50% 45% 20%;
+        grid-template-columns: 85%;
         grid-template-rows: 280px 280px 300px;
         grid-template-areas: 
         "fortnite fortnite fortnite"
