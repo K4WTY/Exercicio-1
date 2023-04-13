@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(241,241,241);
+}
+
+a {
+    text-decoration: none;
+    padding: 0.1rem;
+    font-size: 18px;
+    color: black;
+}
+
+.fa-home {
+    width: 20px;
+}
+
+.fa-mobile-alt {
+    width: 10px;
+}
+
+.fa-gamepad {
+    width: 20px;
+}
+
+.fa-buromobelexperte, .fa-list-ol, .fa-star, .fa-bell {
+    width: 20px;
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.cabeçalho {
+    margin-top: 1rem;
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+}
+
+.li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 2px solid rgb(241,241,241);
+}
+
+.li:hover {
+    border-bottom: 2px solid rgb(0,115,230);
+}
+
+.inicio {
+    border-bottom: 2px solid rgb(0,115,230);
+}
+
+.principal {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.container-grid {
+    display: grid;
+    grid-gap: 0.3rem;
+    grid-template-columns: 45% 25% 30%;
+    grid-template-rows: 280px 280px 280px;
+    grid-template-areas: 
+    "fortnite fortnite pubg"
+    "fortnite fortnite slack"
+    "navegar csgo whats";
+}
+
+.fortnite {
+    background-image: url('../img/fortnite.jpg');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    grid-area: fortnite;
+}
+
+.pubg {
+    background-image: url('../img/pubg.jpg');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    grid-area: pubg;
+}
+
+.slack {
+    background-image: url('../img/slack.png');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    grid-area: slack;
+}
+
+.navegacao {
+    grid-area: navegar;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.div-nav-1 {
+    display: flex;
+    margin-left: 1rem;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.div-nav-2 {
+    display: flex;
+    margin-left: 1rem;
+    justify-content: space-between;
+    width: 67%;
+}
+
+.csgo {
+    background-image: url('../img/cs-go.jpg');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    grid-area: csgo;
+}
+
+.whatsapp {
+    background-image: url('../img/whatsapp.png');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    grid-area: whats;
+}
+
+.fortnite, .pubg, .slack, .csgo, .whatsapp {
+    display: flex;
+    align-items: flex-end;
+}
+
+.fortnite div, .pubg div, .slack div, .csgo div, .whatsapp div {
+    background-color: rgba(0, 0, 0, 50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 720px){
+    .container-grid {
+        display: grid;
+        grid-gap: 0.3rem;
+        grid-template-columns: 50% 45% 20%;
+        grid-template-rows: 280px 280px 300px;
+        grid-template-areas: 
+        "fortnite fortnite fortnite"
+        "fortnite fortnite fortnite"
+        "navegar navegar navegar";
+    }
+
+    .whatsapp, .csgo, .slack, .pubg {
+        display: none;
+    }
+    
+}
