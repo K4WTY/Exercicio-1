@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(10,181,12,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #40e0d0;
+    box-shadow: 1px 1px 15px 1px black;
+    border: 2px solid rgb(61, 61, 61);
+    border-radius: 2rem;
+    align-items: center;
+}
+
+.bem-vindo {
+    margin-top: 5rem;
+    text-align: center;
+    color: white;
+}
+
+.all {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: 4rem;
+    background-color: greenyellow;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login, .password {
+    color: black;
+    font-size: 16px;
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+.login-text {
+    align-self: flex-start;
+    margin-bottom: 5%;
+}
+
+input {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 90%;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+}
+
+.div-button {
+    margin-top: 5%;
+}
+
+.div-button button{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.div-button button:hover {
+    cursor: pointer;
+    border: 1px solid rgb(61, 61, 61);
+    background-color: #40e0d0;
+}
+
+@media (max-width: 1200px) {
+    .all {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .all {
+        padding: 0.5rem;
+    }
+}
