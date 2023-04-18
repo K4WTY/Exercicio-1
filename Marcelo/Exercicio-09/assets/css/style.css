@@ -8,6 +8,12 @@ body {
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #708d81 0%, #001427 100%);
 }
 
+img {
+    height: 4rem;
+    border: 1px solid black;
+    border-radius: 4rem;
+}
+
 .container {
     height: 100vh;
     display: flex;
@@ -51,6 +57,7 @@ body {
 
 .login-text {
     margin-bottom: 15%;
+    margin-top: 5%;
 }
 
 input {
@@ -70,12 +77,15 @@ input {
     height: 2rem;
     border-radius: 0.3rem;
     border: none;
+    transition: all 2s;
 }
 
 .div-button button:hover {
     cursor: pointer;
-    border: 1px solid rgb(61, 61, 61);
-    background-color: #40e0d0;
+    color: white;
+    border: 1px solid white;
+    background-color: #001427;
+    border-radius: 0.6rem;
 }
 
 @media (max-width: 1200px) {
@@ -90,6 +100,14 @@ input {
 
 @media (max-width: 920px) {
     .all {
-        padding: 0.5rem;
+        padding: 1%;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    img {
+        height: 3rem;
     }
 }
