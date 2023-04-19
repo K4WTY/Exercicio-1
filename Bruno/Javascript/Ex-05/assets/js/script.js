@@ -8,15 +8,30 @@ const buttonCadastro = document.querySelector('#cadastro')
 const buttonDados = document.querySelector('#banco')
 
 function cadastro() {
-    usersLista.push(prompt('Cadastro de usuários!\nDigite um username para o usuario:'))
-    passLista.push(prompt('Cadastro de usuários!\nDigite uma senha para o usuario:'))
+    if (inputUser.value != '' && inputPass.value != '') {
+        usersLista.push(inputUser.value)
+        passLista.push(inputPass.value)
+    } else {
+        alert('Preencha os campos')
+    }
 }
 
 function checar() {
+    let validar = false
+
     for (let i = 0; i < usersLista.length; i++) {
         if (inputUser.value == usersLista[i] && inputPass.value == passLista[i]) {
-            window.location.href = 'assets/pages/home.html'
+            validar = true
+            break
+        } else {
+            validar = false
         }
+    }
+    
+    if (validar == true) {
+        window.location.href = 'assets/pages/home.html'
+    } else {
+        alert('Usuário ou senha incorretos!')
     }
 }
 
