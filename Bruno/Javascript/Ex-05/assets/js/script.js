@@ -1,7 +1,7 @@
 let userName
 let passWord
-let usersLista = ['']
-let passLista = ['']
+let usersLista = ['admin']
+let passLista = ['admin']
 
 const inputUser = document.querySelector('#user')
 const inputPass = document.querySelector('#pass')
@@ -13,7 +13,6 @@ function cadastro() {
     passWord = prompt('Cadastro de usuários!\nDigite uma senha para o usuario:')
     usersLista.push(userName)
     passLista.push(passWord)
-    console.log(usersLista)
 }
 
 function checar() {
