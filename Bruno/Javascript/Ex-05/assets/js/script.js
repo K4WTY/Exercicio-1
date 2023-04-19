@@ -11,7 +11,7 @@ function cadastro() {
 
     let oldUsuario = undefined
 
-    if (inputUser.value !== '' && inputPass.value !== '') {
+    if (inputUser.value != '' && inputPass.value != '') {
         for (let i = 0; i < usersLista.length; i++) {
             if (inputUser.value == usersLista[i]) {
                 oldUsuario = true
@@ -20,7 +20,7 @@ function cadastro() {
                 oldUsuario = false
             }
         }
-    } else if (inputUser.value == '' && inputPass.value == '') {
+    } else if (inputUser.value == '' || inputPass.value == '') {
         alert('Preencha os campos')
     }
 
