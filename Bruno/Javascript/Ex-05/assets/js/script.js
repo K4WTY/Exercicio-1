@@ -8,16 +8,34 @@ const buttonCadastro = document.querySelector('#cadastro')
 const buttonDados = document.querySelector('#banco')
 
 function cadastro() {
-    if (inputUser.value != '' && inputPass.value != '') {
+
+    let oldUsuario = undefined
+
+    if (inputUser.value !== '' && inputPass.value !== '') {
+        for (let i = 0; i < usersLista.length; i++) {
+            if (inputUser.value == usersLista[i]) {
+                oldUsuario = true
+                break
+            } else {
+                oldUsuario = false
+            }
+        }
+    } else if (inputUser.value == '' && inputPass.value == '') {
+        alert('Preencha os campos')
+    }
+
+    if (oldUsuario == true) {
+        alert('Este usuário ja está cadastrado')
+    } else if (oldUsuario == false) {
         usersLista.push(inputUser.value)
         passLista.push(inputPass.value)
-    } else {
-        alert('Preencha os campos')
+        alert('Usuário cadastrado com sucesso')
     }
 }
 
 function checar() {
-    let validar = false
+
+    let validar = undefined
 
     for (let i = 0; i < usersLista.length; i++) {
         if (inputUser.value == usersLista[i] && inputPass.value == passLista[i]) {
