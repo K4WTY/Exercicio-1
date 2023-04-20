@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 900;
+}
+
+p {
+    color: rgb(94,116,114);
+}
+
+h3 {
+    color: white;
+}
+
+body {
+    background-color: rgb(197,228,231);
+}
+
+.input {
+    outline: none;
+    width: 80%;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: rgb(243,248,251);
+    color: rgb(0,68,72);
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+.input:focus {
+    border: 3px solid rgb(103,194,179);
+}
+
+.container {
+    width: 100%;
+}
+
+.people-div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.zero {
+    align-self: flex-end;
+    color: rgb(221,135,111);
+    opacity: 0;
+}
+
+.splitter {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: rgb(72,108,109);
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.white-div {
+    width: 65%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.white-div-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-10 {
+    width: 50%;
+}
+
+.bill {
+    font-size: 20px;
+    padding-top: 4%;
+}
+
+.tip, .people {
+    margin-top: 4%;
+    font-size: 20px;
+}
+
+.div-2 {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-2 div button {
+    width: 40%;
+    height: 3rem;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+.button-blue {
+    margin-top: 1%;
+    background-color: rgb(0,71,75);
+    color: white;
+}
+
+.input-margin {
+    margin-bottom: 4%;
+}
+
+.button-blue:hover {
+    background-color: rgb(38,194,173);
+    color: rgb(0,71,76);
+}
+
+.custom-button {
+    width: 40%;
+    height: 3rem;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    background-color: rgb(243,248,251);
+    color: rgb(95,128,128);
+}
+
+.custom-button:focus {
+    border: 3px solid rgb(103,194,179);
+}
+
+.margin-left {
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.div-3 {
+    margin-top: 4%;
+    width: 50%;
+    height: 23rem;
+    border-radius: 1rem;
+    background-color: rgb(0,71,75);
+}
+
+.div-4 {
+    padding-top: 10%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-margin {
+    margin-top: 1rem;
+}
+
+.amount, .total {
+    font-size: 35px;
+    color: rgb(44,189,172);
+}
+
+.div-but {
+    margin-top: 25%;
+    text-align: center;
+}
+
+.button-reset {
+    width: 80%;
+    height: 3rem;
+    font-size: 20px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(13,104,109);
+    color: rgb(0,65,65);
+}
+
+.button-reset:hover {
+    background-color: rgb(159,232,223);
+}
+
+@media (max-width: 830px) {
+
+    .people-div {
+        width: 100%;
+    }
+
+    .div-10 {
+        width: auto;
+    }
+
+    .input {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 0.4rem;
+        border: none;
+        background-color: rgb(243,248,251);
+        color: rgb(0,68,72);
+        text-align: right;
+        margin-top: 0.5rem;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    
+    .splitter {
+        margin-top: 2rem;
+        margin-bottom: 0;
+        color: rgb(72,108,109);
+        text-align: center;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .white-div {
+        width: auto;
+        margin-top: 2rem;
+        background-color: white;
+        border-radius: 2rem 2rem 0 0;
+        height: 100vh;
+    }
+    
+    .white-div-container {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .bill {
+        padding-top: 3rem;
+    }
+    
+    .bill, .tip, .people {
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+    
+    .div-2 {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .div-2 div button {
+        width: 45%;
+        height: 2.4rem;
+        border-radius: 0.4rem;
+        border: none;
+    }
+    
+    .button-blue {
+        background-color: rgb(0,71,75);
+        color: white;
+    }
+    
+    .button-blue:hover {
+        background-color: rgb(38,194,173);
+        color: rgb(0,71,76);
+    }
+    
+    .custom-button {
+        width: 45%;
+        height: 2.4rem;
+        border-radius: 0.4rem;
+        border: none;
+        background-color: rgb(243,248,251);
+        text-align: center;
+        color: rgb(95,128,128);
+    }
+    
+    .margin-left {
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .div-3 {
+        width: auto;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        background-color: rgb(0,71,75);
+        height: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .div-4 {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .div-margin {
+        margin-top: 1rem;
+    }
+    
+    .amount, .total {
+        font-size: 25px;
+        color: rgb(44,189,172);
+    }
+    
+    .div-but {
+        margin-top: 1rem;
+    }
+    
+    .button-reset {
+        width: 15rem;
+        height: 2rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: rgb(38,194,173);
+        color: rgb(0,65,65);
+    }
+}
