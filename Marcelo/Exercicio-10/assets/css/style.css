@@ -21,12 +21,13 @@ body {
     background-image: url('../img/icon-dollar.svg');
     background-repeat: no-repeat;
     background-position: left;
+    background-position: 5px;
 }
 
 .p-input {
     background-image: url('../img/icon-person.svg');
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: 5px;
 }
 
 .input {
