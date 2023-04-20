@@ -17,6 +17,18 @@ body {
     background-color: rgb(197,228,231);
 }
 
+.i-tip {
+    background-image: url('../img/dolar.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.p-input {
+    background-image: url('../img/people.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
 .input {
     outline: none;
     width: 80%;
