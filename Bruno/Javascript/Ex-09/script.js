@@ -15,31 +15,22 @@ function checkP(name) {
 
 while(loopBool) {
 
-    if(arrPacientes.length == 0) {
-        promptMain = Number(prompt(`Pacientes em espera:\n\n\n\n1 - Adicionar novo paciente\n2 - Remover primeiro paciente da lista\n3 - Sair`))
-    } else if(arrPacientes.length == 1) {
-        promptMain = Number(prompt(`Pacientes em espera:\n${arrPacientes.indexOf(arrPacientes[0]) + 1}: ${arrPacientes[0]}\n\n\n1 - Adicionar novo paciente\n2 - Remover primeiro paciente da lista\n3 - Sair`))
-    } else if(arrPacientes.length == 2) {
-        promptMain = Number(prompt(`Pacientes em espera:\n${arrPacientes.indexOf(arrPacientes[0]) + 1}: ${arrPacientes[0]}\n${arrPacientes.indexOf(arrPacientes[1]) + 1}: ${arrPacientes[1]}\n\n1 - Adicionar novo paciente\n2 - Remover primeiro paciente da lista\n3 - Sair`))
-    } else if(arrPacientes.length == 3) {
-        promptMain = Number(prompt(`Pacientes em espera:\n${arrPacientes.indexOf(arrPacientes[0]) + 1}: ${arrPacientes[0]}\n${arrPacientes.indexOf(arrPacientes[1]) + 1}: ${arrPacientes[1]}\n${arrPacientes.indexOf(arrPacientes[2]) + 1}: ${arrPacientes[2]}\n\n1 - Adicionar novo paciente\n2 - Remover primeiro paciente da lista\n3 - Sair`))
-    } else if(arrPacientes.length == 4) {
-        promptMain = Number(prompt(`Pacientes em espera:\n${arrPacientes.indexOf(arrPacientes[0]) + 1}: ${arrPacientes[0]}\n${arrPacientes.indexOf(arrPacientes[1]) + 1}: ${arrPacientes[1]}\n${arrPacientes.indexOf(arrPacientes[2]) + 1}: ${arrPacientes[2]}\n${arrPacientes.indexOf(arrPacientes[3]) + 1}: ${arrPacientes[3]}\n\n1 - Adicionar novo paciente\n2 - Remover primeiro paciente da lista\n3 - Sair`))
+    let pacientes = ''
+    for(let i = 0; i < arrPacientes.length; i++) {
+        pacientes += `${i + 1}° ${arrPacientes[i]}\n`
     }
+
+    promptMain = Number(prompt(`Pacientes em espera:\n${pacientes}\n1 - Adicionar novo paciente\n2 - Remover primeiro paciente da lista\n3 - Sair`))
     
     switch(promptMain) {
         case 1:
-            if(arrPacientes.length <= 3) {
-                let paciente = prompt('Digite o nome do paciente')
-                checkP(paciente)
-                if(pacienteOnFila) {
-                    alert('Este paciente já está na lista!')
-                    pacienteOnFila = false
-                } else if(pacienteOnFila == false) {
-                    arrPacientes.push(paciente)
-                }
-            } else {
-                alert('Limite atingido')
+            let paciente = prompt('Digite o nome do paciente')
+            checkP(paciente)
+            if(pacienteOnFila) {
+                alert('Este paciente já está na lista!')
+                pacienteOnFila = false
+            } else if(pacienteOnFila == false) {
+                arrPacientes.push(paciente)
             }
         break
         case 2:
