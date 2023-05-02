@@ -16,7 +16,7 @@ while(whileBool) {
             if(isNaN(quartosImovel) && isNaN(banheirosImovel)) {
                 alert(`Algo de errado não está certo!`)
             } else {
-                arrayImoveis.push(`Nome do proprietário: ${donoImovel}\nQuantidade de quartos: ${quartosImovel}\nQuantidade de banheiros: ${banheirosImovel}\nGaragem: ${garagemImovel}`)
+                arrayImoveis.push({nome: donoImovel, quartos: quartosImovel, banheiros: banheirosImovel, garagem: garagemImovel})
             }
         break
         case 2:
@@ -25,7 +25,7 @@ while(whileBool) {
             } else {
                 let imoveisCadastrados = ''
                 for(let i = 0; i < arrayImoveis.length; i++) {
-                    imoveisCadastrados += `${i + 1}° Imovel\n\n${arrayImoveis[i]}\n---------------------------------------------------\n\n`
+                    imoveisCadastrados += `${i + 1}° Imovel\n\nNome do proprietário: ${JSON.stringify(arrayImoveis[i].nome)}\nQuantidade de quartos: ${arrayImoveis[i].quartos}\nQuantidade de banheiros: ${arrayImoveis[i].banheiros}\nGaragem: ${arrayImoveis[i].garagem}\n---------------------------------------------------\n\n`
                 }
                 alert(imoveisCadastrados)
             }
@@ -34,7 +34,7 @@ while(whileBool) {
             if(arrayImoveis.length != 0) {
                 let teste = Number(prompt(`Digite um numero de 1 a ${arrayImoveis.length}`))
                 if(teste != 0) {
-                    alert(`${teste}° Imovel\n\n${arrayImoveis[teste - 1]}`)
+                    alert(`${teste}° Imovel\n\nNome do proprietário: ${JSON.stringify(arrayImoveis[teste - 1].nome)}\nQuantidade de quartos: ${arrayImoveis[teste - 1].quartos}\nQuantidade de banheiros: ${arrayImoveis[teste - 1].banheiros}\nGaragem: ${arrayImoveis[teste - 1].garagem}`)
                 }
             }
         break
