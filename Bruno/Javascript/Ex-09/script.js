@@ -42,8 +42,11 @@ while(loopBool) {
             }
         break
         case 3:
-            loopBool = false
-            alert('Saída do sistema confirmada')
+            let confir = confirm('Deseja mesmo sair?')
+            if(confir) {
+                loopBool = false
+                alert('Saída do sistem confirmada!')
+            }
         break
         default:
             alert('Opção inválida')
