@@ -4,7 +4,7 @@ let promptMain
 
 while(whileBool) {
 
-    promptMain = Number(prompt(`Imoveis cadastrados: ${arrayImoveis.length}\n\n1 - Cadastrar um imovel\n2 - Ver imoveis cadastrados\n3 - Sair`))
+    promptMain = Number(prompt(`Imoveis cadastrados: ${arrayImoveis.length}\n\n1 - Cadastrar um imovel\n2 - Ver imoveis cadastrados\n3 - Para consultar algum imovel especifico\n4 - Sair`))
 
     switch(promptMain) {
         case 1:
@@ -31,6 +31,14 @@ while(whileBool) {
             }
         break
         case 3:
+            if(arrayImoveis.length != 0) {
+                let teste = Number(prompt(`Digite um numero de 1 a ${arrayImoveis.length}`))
+                if(teste != 0) {
+                    alert(`${teste}° Imovel\n\n${arrayImoveis[teste - 1]}`)
+                }
+            }
+        break
+        case 4:
         let confirmarSaida = confirm('Deseja mesmo sair?')
         if(confirmarSaida) {
             whileBool = false
