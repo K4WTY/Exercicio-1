@@ -1,10 +1,10 @@
 let whileBool = true
 let arrayImoveis = []
-let promptMain
+
 
 while(whileBool) {
 
-    promptMain = Number(prompt(`Imoveis cadastrados: ${arrayImoveis.length}\n
+    let promptMain = Number(prompt(`Imoveis cadastrados: ${arrayImoveis.length}\n
 1 - Cadastrar um imovel
 2 - Ver imoveis cadastrados
 3 - Para consultar algum imovel especifico
@@ -14,6 +14,8 @@ while(whileBool) {
     switch(promptMain) {
         case 1:
             let imovel = {}
+
+            // Obrigado Bruno <3!!!
 
             imovel.nome = prompt(`Digite seu nome:`)
             imovel.quartos = Number(prompt(`Digite a quantidade de quartos que seu imovel possui:`))
