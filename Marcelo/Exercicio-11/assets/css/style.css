@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-edit {
+    padding: 0;
+}
+
+.a-edit {
+    padding: 15px;
+}
+
+.div ul:nth-child(1) .nav-item:nth-child(1) {
+    background-color: #e7e7e7;
+}
+
+.div ul:nth-child(1) li:nth-child(2) .nav-link:hover ,
+.div ul:nth-child(1) li:nth-child(2) .nav-link:focus {
+    background-color: #e7e7e7;
+}
+
+.div ul:nth-child(2) li:nth-child(1) .nav-link:hover,
+.div ul:nth-child(2) li:nth-child(1) .nav-link:focus {
+    background-color: #e7e7e7;
+}
