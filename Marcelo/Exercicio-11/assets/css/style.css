@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-.nav-edit {
-    padding: 0;
-    border-bottom: 2px solid #e7e7e7;
-}
-
-.a-edit {
-    padding: 15px;
-}
-
 .div ul:nth-child(1) .nav-item:nth-child(1) {
     background-color: #e7e7e7;
 }
