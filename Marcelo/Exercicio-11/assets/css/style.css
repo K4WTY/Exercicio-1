@@ -6,6 +6,7 @@
 
 .nav-edit {
     padding: 0;
+    border-bottom: 2px solid #e7e7e7;
 }
 
 .a-edit {
@@ -24,4 +25,38 @@
 .div ul:nth-child(2) li:nth-child(1) .nav-link:hover,
 .div ul:nth-child(2) li:nth-child(1) .nav-link:focus {
     background-color: #e7e7e7;
+}
+
+.a-edit-2 {
+    text-decoration: none;
+}
+
+.li-edit {
+    padding: 10px;
+}
+
+main div hr {
+    color: #706d6d;
+    margin-top: 50px;
+}
+
+.div-edit {
+    padding: 50px;
+}
+
+.p-edit {
+    font-size: 25px;
+}
+
+.p-edit-2 {
+    margin-top: 10px;
+}
+
+.p-edit-3 {
+    padding-top: 15px;
+}
+
+footer {
+    margin-top: 150px;
+    padding-bottom: 2%;
 }
